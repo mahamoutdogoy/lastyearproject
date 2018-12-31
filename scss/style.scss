@@ -1,0 +1,158 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+/*
+* More pseudo-elements effects here: 
+* https://codepen.io/vfreitas-/pen/YPJmKX
+*/
+
+$indigo: #5C6BC0;
+$f: #fff;
+
+@mixin putMiddle()
+{
+	left: 50%;
+	top: 50%;
+	@include transform(translate(-50%,-50%));
+}
+
+/* Base */
+*,
+*:before,
+*:after { @include box-sizing(border-box); 
+	margin: 0; padding: 0; }
+html { font-size: 18px; }
+body { margin: 0; padding: 0; }
+button { border: none; outline: none; cursor: pointer; }
+/* Base */
+
+div { position: relative; }
+
+.one
+{
+	height: 50vh;
+	min-height: 50vh;
+	width: 100%;
+	background: $indigo;
+}
+
+.two
+{
+	height: 50vh;
+	min-height: 50vh;
+	width: 100%;
+	background: $f;
+}
+
+button
+{
+	position: relative;
+	font: 2rem 'Lato';
+	padding: 1rem 2rem;
+	letter-spacing: 3px;
+	background: transparent;
+	border: 2px solid;
+	border-radius: 2px;
+  z-index: 1;
+	overflow: hidden;
+	
+	@include putMiddle();
+	@include box-shadow(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
+	
+	&:before
+	{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		@include transition(all .4s ease-in );
+	}
+	
+	&.white
+	{
+		border-color: $indigo;
+		background: $indigo;
+		color: $indigo;
+		&:before
+		{
+			background: $f;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		&:hover
+		{
+			color: $f;
+			&:before
+			{
+				background: $indigo;
+				width: 0;
+				height: 0;
+				top: 50%;
+				left: 50%;
+			}
+		}
+	}/*.white*/
+	
+	&.indigo
+	{
+		border-color: $f;
+		background: $f;
+		color: $f;
+		
+		&:before
+		{
+			background: $indigo;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+		&:hover
+		{
+			color: $indigo;
+			&:before
+			{
+				background: $f;
+				width: 0;
+				height: 0;
+				top: 50%;
+				left: 50%;
+			}
+		}
+	}/* Indigo */
+	
+}/*Button*/
+
+
+
+
+
+/*Animate click circle class*/
+.circle
+{
+  display: block; 
+  position: absolute;
+	opacity: 0.4;
+	background: black;
+  border-radius: 50%;
+	@include transform(scale(0));
+  
+  &.animate
+	{
+		@include animation(effect 0.65s linear);
+	}
+}
+
+@include keyframes(effect) 
+{
+	100%
+	{
+    opacity: 0;
+		@include transform(scale(2.5));
+  }
+}
+
+
+

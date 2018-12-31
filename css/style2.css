@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+/*
+* More pseudo-elements effects here: 
+* https://codepen.io/vfreitas-/pen/YPJmKX
+*/
+/* Base */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Base */
+div {
+  position: relative;
+}
+
+.one {
+  height: 50vh;
+  min-height: 50vh;
+  width: 100%;
+  background: #5C6BC0;
+}
+
+.two {
+  height: 50vh;
+  min-height: 50vh;
+  width: 100%;
+  background: #fff;
+}
+
+button {
+  position: relative;
+  font: 2rem 'Lato';
+  padding: 1rem 2rem;
+  letter-spacing: 3px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 2px;
+  z-index: 1;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  /*.white*/
+  /* Indigo */
+}
+button:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+button.white {
+  border-color: #5C6BC0;
+  background: #5C6BC0;
+  color: #5C6BC0;
+}
+button.white:before {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+button.white:hover {
+  color: #fff;
+}
+button.white:hover:before {
+  background: #5C6BC0;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+button.indigo {
+  border-color: #fff;
+  background: #fff;
+  color: #fff;
+}
+button.indigo:before {
+  background: #5C6BC0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+button.indigo:hover {
+  color: #5C6BC0;
+}
+button.indigo:hover:before {
+  background: #fff;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+}
+
+/*Button*/
+/*Animate click circle class*/
+.circle {
+  display: block;
+  position: absolute;
+  opacity: 0.4;
+  background: black;
+  border-radius: 50%;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.circle.animate {
+  -moz-animation: effect 0.65s linear;
+  -webkit-animation: effect 0.65s linear;
+  animation: effect 0.65s linear;
+}
+
+@-moz-keyframes effect {
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@-webkit-keyframes effect {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+@keyframes effect {
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
