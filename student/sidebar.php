@@ -45,8 +45,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										 <li id="menu-academico" ><a href="subject.php"><i class="fa fa-file-text-o" style="color:#a2d200"></i><span>Subjects</span><div class="clearfix"></div></a></li>
 									
 							             <li id="menu-academico" ><a href="students_list.php"><i class="fa fa-user" style="color:#ff4a43;"></i><span> Students</span><div class="clearfix"></div></a></li>
+
+							             <li id="menu-academico" ><a href="examination.php"><i class="fa fa-book" aria-hidden="true" style="color:#008DE7;"></i><span> Training</span> <div class="clearfix"></div></a></li>
+										   
 										   
 								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a></li>
+
+
+								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-star" aria-hidden="true" style="color:#ffff00"></i><span> Ranking</span> <div class="clearfix"></div></a></li>
 										   
 										 <li id="menu-academico" ><a href="result.php"><i class="fa fa-asterisk" style="color:#8e44ad;" ></i><span> Exam Results</span> <div class="clearfix"></div></a></li>
 								
@@ -55,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  </div>
 							  <div class="clearfix"></div>		
 						
-							
+				
 							<!-- script-for sticky-nav -->
 		
 		<!-- /script-for sticky-nav -->

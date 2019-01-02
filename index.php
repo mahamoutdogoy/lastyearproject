@@ -14,7 +14,7 @@
 
 <body>
 <div>
-<center><b><h4>Design and Implimentation of Online Exam System</h4></b></center>
+<center><b><h4>Online Quiz</h4></b></center>
 </div>
   <div class='one'>
   <a href="admin/"><button class='indigo ripple' ripple-color='#5C6BC0'>Admin Login</button></a>

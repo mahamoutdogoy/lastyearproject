@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--copy rights start here-->
 
 <div class="copyrights">
-	 <p>project</p>
+	 <p>Online Quiz</p>
 </div>	
 <!--copy rights end here-->
 <!-- script-for sticky-nav -->

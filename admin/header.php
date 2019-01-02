@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--header start here-->
 				<div class="header-main">
 					<div class="logo-w3-agile">
-								<h4><b><font color="white">Online Exam </font></b></h4>
+								<h4><b><font color="white">Online Quiz</font></b></h4>
 							</div>
 					<div class="w3layouts-left">
 							
