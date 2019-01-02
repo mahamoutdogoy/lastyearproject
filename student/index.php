@@ -10,6 +10,7 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 </head> 
+
 <body>
 
 <div class="page-container">
@@ -148,8 +149,8 @@ include("fetch_records.php")
 					<div class="clearfix"></div>
 				</div>
 <!--//four-grids here-->
-	          <div class="four-grids ">
-                            <div class="panel panel-white">
+	          <div class="four-grids " >
+                            <div class="panel panel-white" style="background-color: #22beef;">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Notice</h4>
                                 </div>
