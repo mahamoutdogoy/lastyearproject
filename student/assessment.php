@@ -2,14 +2,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title></title>
+<title>OES</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 <link rel="stylesheet" href="css/style5.css">
-
+<link rel="shortcut icon" href="http://bit.ly/ghfavicon" width=32px>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+	
+	
+	<link rel="prefetch" href="play1.svg">
+	<script src="js/script1.js" defer></script>
 </head> 
 <body >
 <div class="page-container">
@@ -114,40 +119,57 @@ if (($result) === TRUE) {
   <div class="countdown-label">Time Remaining</div>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	</div>
 
  	<div class="validation-system">
  		
  		<div class="validation-form">
   	    
-        
+         
                  <form action="submit_assessment.php" method="POST" name="quiz" id="quiz_form" >
                                             <div class="tab-content">
 											<?php 
-											
 											include("connect.php");
 											$sql = "SELECT * FROM questiontbl WHERE examid = '$exam_id'";
-                                         
-										  // $sql = "SELECT * FROM questiontbl WHERE qid =56 and examid = '$exam_id'";
-										   $result =mysql_query($sql);
+                                            $result =mysql_query($sql);
 
                                             if (mysql_num_rows($result) > 0) {
                                             $qno = 1;
-                                            while($row = mysql_fetch_assoc($result)) {
+											
+                                            while($row = mysql_fetch_array($result)) {
 												$qsid = $row['qid'];
 												$qs = $row['questionname'];
-												//$type = $row['type'];
+
+												$type = $row['questiontype'];
 												$op1 = $row['op1'];
 												$op2 = $row['op2'];
 												$op3 = $row['op3'];
 												$op4 = $row['op4'];
 												$ans = $row['correctop'];
 												$enan =$row['correctop'];
-                                          
+                                          $i=0;
+										  if($type=='landwt')
+										  {
+											  $qs1 = "Listen and Write<br>";
+											  
+											  $b='
+													<a id=play class="btn bg-success">Listen</a> 
+													<a id=pause></a> 
+													<a id=stop></a>';
+												  $qs ='<article><b style="color:white;">'.$qs.'</b></article>';
+												
+										    }
+										   else
+										   {
+											  $qs1="";
+											  $b="";
+											  $qs = $row['questionname'];
+										   }
+										  
 											
 											if ($qno == 1) {
-
+                                             if($type !='fill' && $type !='wtword'&& $type !='landwt') {
 											print '
 											<div role="tabpanel" class="tab-pane active fade in" id="tab'.$qno.'">
                                              <p><b>'.$qno.'.</b> '.$qs.'</p>
@@ -159,7 +181,23 @@ if (($result) === TRUE) {
 											 <input type="hidden" name="ran'.$qno.'" value="'.base64_encode($enan).'">
                                              </div>
 											';	
-											}else{
+											}
+											else
+											print '
+											<div role="tabpanel" class="tab-pane active fade in" id="tab'.$qno.'">
+                                             <p><b>'.$qno.'</b>'.$qs1.$qs.$b.'</p>
+											
+											 <p><input type="text" name="an'.$qno.'"  class="form-control" onkeyup="this.value = this.value.toUpperCase();" value=" " > </p>
+											
+											 <input type="hidden" name="qst'.$qno.'" value="'.base64_encode($qs).'">
+											 <input type="hidden" name="ran'.$qno.'" value="'.base64_encode($enan).'">
+                                             </div>
+											';	
+											}
+											
+											
+											else{
+											if($type !='fill' && $type !='wtword'&& $type !='landwt') {
 											print '
 											<div role="tabpanel" class="tab-pane fade in" id="tab'.$qno.'">
                                              <p><b>'.$qno.'.</b> '.$qs.'</p>
@@ -171,6 +209,19 @@ if (($result) === TRUE) {
 											 <input type="hidden" name="ran'.$qno.'" value="'.base64_encode($enan).'">
                                              </div>
 											';		
+											}
+											else
+													print '
+											<div role="tabpanel" class="tab-pane fade in" id="tab'.$qno.'">
+                                             <p><b>'.$qno.'</b>'.$qs1.$qs.$b.'</p>
+											
+											
+											 <p><input type="text" name="an'.$qno.'"  class="form-control" onkeyup="this.value = this.value.toUpperCase();" value=" "> </p>
+											
+											 <input type="hidden" name="qst'.$qno.'" value="'.base64_encode($qs).'">
+											 <input type="hidden" name="ran'.$qno.'" value="'.base64_encode($enan).'">
+                                             </div>
+											';	
 											}
 
 											$qno = $qno + 1;	
@@ -190,9 +241,7 @@ if (($result) === TRUE) {
 											
                                             <ul class="nav nav-tabs" role="tablist">
 											<?php 
-											
 											include("connect.php");
-											
 											$sql = "SELECT * FROM questiontbl WHERE examid = '$exam_id'";
                                             $result = mysql_query($sql);
 
@@ -222,10 +271,9 @@ if (($result) === TRUE) {
 											
                                             </ul>
 											
-                                       </div>
-								<br>
-								<input onclick="return confirm('Are you sure you want to submit your assessment ?')" class="btn bg-success" type="submit" value="Submit Assessment">
- 
+
+                                        </div>
+								<br><input onclick="return confirm('Are you sure you want to submit your assessment ?')" class="btn bg-success" type="submit" value="Submit Assessment">
 						</form>  
      
 

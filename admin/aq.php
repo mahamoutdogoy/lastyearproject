@@ -1,4 +1,4 @@
-	<?php
+<?php
 	   include('connect.php');
 	   if(isset($_POST['submit']))
        {  
@@ -8,7 +8,7 @@
 		   $deptnm=$_POST['deptnm'];
 		   $catnm=$_POST['catnm'];*/
 		   $question=$_POST['question'];
-		   //echo $question;exit;
+		   $questiontype=$_POST['menu'];
 		   if($_POST['menu']=='match'){
 			  $op1=$_POST['lop1'].'-'.$_POST['rop1']; 
 			  $op2=$_POST['lop2'].'-'.$_POST['rop2']; 
@@ -37,9 +37,14 @@
 			  
 			  $correct_op=$_POST['correct_op_fill'];
 		  }
+		   else if($_POST['menu']=='landwt'){
+			  
+			  $correct_op=$_POST['correct_op_lwt'];
+		  }
 	      // $query="insert into questiontbl(qid,examid,questionname,op1,op2,op3,op4,correctop)values('','$examid','$question','$op1','$op2','$op3','$op4','$correct_op')";
-	      $query="insert into questiontbl(examid,questionname,op1,op2,op3,op4,correctop)values('$examid','$question','$op1','$op2','$op3','$op4','$correct_op')";
+	      $query="insert into questiontbl(examid,questionname,questiontype,op1,op2,op3,op4,correctop)values('$examid','$question','$questiontype','$op1','$op2','$op3','$op4','$correct_op')";
            $result= mysql_query($query);
+	      
 	       
 	       if($result)
 		      echo "record inserted successfully";

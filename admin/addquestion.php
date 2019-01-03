@@ -31,7 +31,7 @@ include("header.php"); ?>
  		<div class="validation-form">
  	<!---->
   	    
-        <form action="aq.php" method="post" name="jump" >
+        <form action="aq.php" method="post" >
 		     <div class="col-md-12 form-group2 group-mail">
             <?php $sql = "SELECT * FROM examtbl where status='1'";
 			
@@ -64,7 +64,7 @@ include("header.php"); ?>
              
 
              <label class="control-label">Select Question Type</label>
-            <select name="menu" id="colorselector" onchange="gotoPage(this)"> 
+            <select name="menu" id="colorselector"> 
 			  <option value="" >--Select--</option>
               <option value="mcq" >multiple choice questions </option>
               <option value="wtword" >write the word </option>
@@ -144,12 +144,24 @@ include("header.php"); ?>
           </div> 
   
   
+          <div id="landwt" class="colors landwt"> 
+		  
+		  
+		 <div class="col-md-12 form-group2 group-mail">
+               <label class="control-label">Enter Listen And Write input</label>
+               <input type="text" class="form-control"  name="correct_op_lwt" onkeyup="this.value = this.value.toUpperCase();" required">
+          </div>
+		  <div class="clearfix"> </div>
+		  
+		  
+		  </div>
+  
           <div id="wtword" class="colors wtword">  
 		  
 		  
 		  <div class="col-md-12 form-group2 group-mail">
                <label class="control-label">Correct Word</label>
-               <input type="text" class="form-control"  name="correct_op_word" "required">
+               <input type="text" class="form-control"  name="correct_op_word" onkeyup="this.value = this.value.toUpperCase();" required">
           </div>
 		  <div class="clearfix"> </div>
 		  
@@ -160,7 +172,7 @@ include("header.php"); ?>
 		  
 		 <div class="col-md-12 form-group2 group-mail">
                <label class="control-label">Correct Word</label>
-               <input type="text" class="form-control"  name="correct_op_fill" "required">
+               <input type="text" class="form-control"  name="correct_op_fill" onkeyup="this.value = this.value.toUpperCase();" required">
           </div>
 		  <div class="clearfix"> </div>
 		  
@@ -305,7 +317,6 @@ CKEDITOR.replace("editor2");
 CKEDITOR.replace("editor3");
 CKEDITOR.replace("editor4");
 CKEDITOR.replace("editor5");
-
     //bootstrap WYSIHTML5 - text editor
 $('.textarea').wysihtml5();
   });

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 31, 2018 at 05:21 PM
+-- Generation Time: Jan 03, 2019 at 07:51 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -45,12 +45,6 @@ CREATE TABLE `assesmenttbl` (
 --
 
 INSERT INTO `assesmenttbl` (`recordid`, `studid`, `studname`, `examname`, `examid`, `score`, `status`, `nextretake`, `date`) VALUES
-(39, 33, 'maya kale', 'sem 1 exam c prog', 13, '50', 'PASS', '04/04/2018', '03/20/2018'),
-(51, 33, 'maya kale', 'sem 1 exam .net', 15, '50', 'PASS', '04/04/2018', '03/20/2018'),
-(55, 32, 'Nikita Rajole', ' c prog exam for diploma', 16, '0', 'FAIL', '01/14/2019', '12/30/2018'),
-(56, 32, 'Nikita Rajole', '', 15, '0', 'PASS', '', ''),
-(60, 35, 'test1 test1', 'sem 1 exam c prog', 13, '0', 'FAIL', '01/14/2019', '12/30/2018'),
-(62, 34, 'TEst TEST', 'sem 1 exam c prog', 13, '0', 'FAIL', '01/14/2019', '12/30/2018'),
 (63, 36, 'yasha dayma', 'exam1', 17, '0', 'FAIL', '01/05/2019', '12/31/2018'),
 (64, 38, 'kan nockdam', 'exam1', 17, '33', 'PASS', '01/05/2019', '12/31/2018'),
 (68, 39, 'asi baka', 'exam1', 17, '0', 'FAIL', '12/31/2018', '12/31/2018');
@@ -73,17 +67,6 @@ CREATE TABLE `categorytbl` (
 --
 
 INSERT INTO `categorytbl` (`cid`, `catname`, `deptname`, `cstatus`) VALUES
-(10, 'Degree', 'Computer', 1),
-(11, 'Degree', 'IT', 1),
-(12, 'Degree', 'Automobile', 1),
-(13, 'Degree', 'E & TC', 1),
-(14, 'Degree', 'Mechanical', 1),
-(15, 'Diploma', 'Chemical', 1),
-(16, 'Diploma', 'Computer', 1),
-(17, 'Diploma', 'IT', 1),
-(18, 'Diploma', 'Automobile', 1),
-(19, 'Diploma', 'E & TC', 1),
-(20, 'Diploma', 'Chemical', 1),
 (21, 'cat1', 'dept1', 1),
 (22, 'cat2', 'dept1', 1),
 (23, 'cat2', 'dept1', 0);
@@ -105,11 +88,6 @@ CREATE TABLE `departmenttbl` (
 --
 
 INSERT INTO `departmenttbl` (`deptid`, `deptname`, `status`) VALUES
-(7, 'Computer', 1),
-(8, 'IT', 1),
-(9, 'Automobile', 1),
-(11, 'E & TC', 1),
-(12, 'Mechanical', 1),
 (13, 'dept1', 1),
 (14, 'dept2', 1);
 
@@ -138,7 +116,6 @@ CREATE TABLE `examtbl` (
 --
 
 INSERT INTO `examtbl` (`examid`, `examname`, `duration`, `percentage`, `reexam`, `deadline`, `subname`, `deptname`, `catname`, `instruction`, `status`) VALUES
-(13, 'sem 1 exam c prog', 30, 35, 15, '2018-03-19', 'C Programming', 'Computer', 'Degree', 'dont copy', 1),
 (17, 'exam1', 10, 10, 0, '2019-01-10', 'sub1', 'dept1', 'cat1', 'fsdf', 1);
 
 -- --------------------------------------------------------
@@ -238,8 +215,6 @@ CREATE TABLE `studenttbl` (
 --
 
 INSERT INTO `studenttbl` (`studid`, `fname`, `lname`, `gender`, `blood`, `email`, `phone`, `mobile`, `password`, `cpassword`, `dob`, `address`, `deptname`, `catname`, `file`, `status`) VALUES
-(34, 'TEst', 'TEST', 'Male', 'A', 'test@gmail.com', '85858585285', '9898989898', '123', '123', '2010-12-10', 'TEST', 'Computer', 'Degree', '30907.jpg', 0),
-(35, 'test1', 'test1', 'Male', 'A', 'test1@gmail.com', '8888888888', '898988888888', '123', '123', '2017-12-30', 'test', 'Computer', 'Degree', '867565.jpg', 0),
 (36, 'yasha', 'dayma', 'Female', 'A', 'yasha@gmail.com', '234323', '66666666', 'yasha', 'yasha', '2018-12-13', 'nashik', 'dept1', 'cat1', '573998.jpg', 1),
 (37, 'dogoy', 'mahamout', 'Male', 'A', 'student@student.com', '8482838002', '8482838002', 'student', 'student', '1994-01-02', 'dd', 'dept1', 'cat1', '914332.jpg', 1),
 (38, 'kan', 'nockdam', 'Female', 'AB+', 'kan@gmail.com', '9090909090', '9090909090', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '28.jpg', 1),
@@ -271,9 +246,6 @@ CREATE TABLE `subjecttbl` (
 --
 
 INSERT INTO `subjecttbl` (`sid`, `subname`, `deptname`, `catname`, `status`) VALUES
-(5, 'C Programming', 'IT', 'Diploma', 1),
-(6, '.Net Programming', 'Computer', 'Degree', 1),
-(7, 'C Programming', 'Computer', 'Degree', 1),
 (9, 'sub1', 'dept1', 'cat1', 1),
 (10, 'sub2', 'dept2', 'cat2', 0);
 
