@@ -34,6 +34,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
 
 include("connect.php");
+
+$rank = "SELECT score FROM assesmenttbl ORDER BY score DESC";
+$re1 = mysql_query($rank);
 $sql="SELECT * FROM assesmenttbl WHERE studid = '$my_id'";
 $result = mysql_query($sql);
 ?>
@@ -49,6 +52,7 @@ $result = mysql_query($sql);
 			   <th align="left">Student ID</th>
 			   <th align="left">Student Name</th>
 			   <th align="left">Score</th>
+			   <th align="left">Rank</th>
 			   <th align="left">Date</th>
                <th align="left">Status</th>
 			   <th align="left">Next Retake</th>
@@ -67,6 +71,7 @@ $result = mysql_query($sql);
     <td><?php echo $rows['studid'];?></td>
 	<td><?php echo $rows['studname'];?></td>
 	<td><?php echo $rows['score'];?><b>%</b></td>
+	<td><?php print_r($re1);?></td>
 	<td><?php echo $rows['date'];?></td>
 	<td><?php echo $rows['status'];?></td>
 	<td><?php echo $rows['nextretake'];?></td>

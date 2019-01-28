@@ -43,7 +43,7 @@ $result = mysql_query($sql);
 <div class="agile-grids">
 <div class="agile-tables">
 <div class="w3l-table-info">
-<h2>List of Users</h2>
+<h2>List of Admins</h2>
 <table width="100%" id="table">
 <thead>
 <tr>
@@ -58,7 +58,8 @@ $result = mysql_query($sql);
 			   <th align="left">Address</th>-->
 			   <th align="left">Department</th>
 			   <th align="left">Category</th>
-			   <th align="left">File</th>
+			   <th align="left">Image</th>
+			   <th align="left">Status</th>
 			   <th align="left">Action</th>
 			    
 </tr>

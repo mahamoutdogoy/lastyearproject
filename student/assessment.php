@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>OES</title>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -151,12 +151,12 @@ if (($result) === TRUE) {
                                           $i=0;
 										  if($type=='landwt')
 										  {
-											  $qs1 = "Listen and Write<br>";
+											  $qs1 = "  Listen and Write <br>";
 											  
 											  $b='
-													<a id=play class="btn bg-success">Listen</a> 
-													<a id=pause></a> 
-													<a id=stop></a>';
+													<a id="play" class="btn bg-success">Listen</a> 
+													<a id="pause"></a> 
+													<a id="stop"></a>';
 												  $qs ='<article><b style="color:white;">'.$qs.'</b></article>';
 												
 										    }

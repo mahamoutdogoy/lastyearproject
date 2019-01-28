@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 03, 2019 at 07:51 AM
+-- Generation Time: Jan 25, 2019 at 03:54 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -69,7 +69,9 @@ CREATE TABLE `categorytbl` (
 INSERT INTO `categorytbl` (`cid`, `catname`, `deptname`, `cstatus`) VALUES
 (21, 'cat1', 'dept1', 1),
 (22, 'cat2', 'dept1', 1),
-(23, 'cat2', 'dept1', 0);
+(23, 'cat2', 'dept1', 0),
+(24, 'cat7', 'dept7', 1),
+(25, 'cat8', 'dept8', 1);
 
 -- --------------------------------------------------------
 
@@ -89,7 +91,9 @@ CREATE TABLE `departmenttbl` (
 
 INSERT INTO `departmenttbl` (`deptid`, `deptname`, `status`) VALUES
 (13, 'dept1', 1),
-(14, 'dept2', 1);
+(14, 'dept2', 1),
+(15, 'dept7', 1),
+(16, 'dept8', 1);
 
 -- --------------------------------------------------------
 
@@ -116,7 +120,9 @@ CREATE TABLE `examtbl` (
 --
 
 INSERT INTO `examtbl` (`examid`, `examname`, `duration`, `percentage`, `reexam`, `deadline`, `subname`, `deptname`, `catname`, `instruction`, `status`) VALUES
-(17, 'exam1', 10, 10, 0, '2019-01-10', 'sub1', 'dept1', 'cat1', 'fsdf', 1);
+(17, 'exam1', 10, 10, 0, '2019-01-10', 'sub1', 'dept1', 'cat1', 'fsdf', 1),
+(18, 'Spelling Skills', 10, 40, 1, '2019-03-13', 'sub7', 'dept7', 'cat7', 'do not copy', 1),
+(19, 'Vocabualry', 10, 40, 1, '2019-04-12', 'sub8', 'dept8', 'cat8', 'do not copy please', 1);
 
 -- --------------------------------------------------------
 
@@ -183,7 +189,10 @@ INSERT INTO `questiontbl` (`qid`, `examid`, `questionname`, `questiontype`, `op1
 (59, 17, '<p>what is php</p>\r\n', '', 'a', 'b', 'c', 'd', 'c'),
 (60, 17, '<table>\r\n	<tbody>\r\n		<tr>\r\n			<td><strong>Years</strong></td>\r\n			<td><strong>Transport &amp; communication</strong></td>\r\n			<td><strong>Education</strong></td>\r\n			<td><strong>Housing</strong></td>\r\n			<td><strong>Health</strong></td>\r\n			<td><strong>Social Welfare</strong></td>\r\n		</tr>\r\n		<tr>\r\n			<td>1980-81</td>\r\n			<td>56219</td>\r\n			<td>75493</td>\r\n			<td>13537</td>\r\n			<td>9596</td>\r\n			<td>1985</td>\r\n		</tr>\r\n		<tr>\r\n			<td>1981-82</td>\r\n			<td>71416</td>\r\n			<td>80691</td>\r\n			<td>15902</td>\r\n			<td>10135</td>\r\n			<td>2073</td>\r\n		</tr>\r\n		<tr>\r\n			<td>1982-83</td>\r\n			<td>73520</td>\r\n			<td>61218</td>\r\n			<td>16736</td>\r\n			<td>11000</td>\r\n			<td>3918</td>\r\n		</tr>\r\n		<tr>\r\n			<td>1983-84</td>\r\n			<td>75104</td>\r\n			<td>73117</td>\r\n			<td>17523</td>\r\n			<td>12038</td>\r\n			<td>4102</td>\r\n		</tr>\r\n		<tr>\r\n			<td>1984-85</td>\r\n			<td>80216</td>\r\n			<td>90376</td>\r\n			<td>19420</td>\r\n			<td>15946</td>\r\n			<td>10523</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Which year saw the maximum expenditure on Health, so far, out of the years given?</p>\r\n', '', '1984 - 85B. ', '1980 - 81C. ', '1981 - 82D. ', '1982 - 83', '1982 - 83'),
 (62, 17, '<p>The word &lsquo;based&rsquo; ends in /d/ or /t/ sound.</p>\r\n', '', '', '', '', '', 't'),
-(63, 17, '<ol>\r\n	<li>\r\n	<p><strong>Fill in the blank with the correct word. Babar Ali taught the deprived kids __________ of life.</strong></p>\r\n	</li>\r\n</ol>\r\n', '', '', '', '', '', ' Fundamentals ');
+(63, 17, '<ol>\r\n	<li>\r\n	<p><strong>Fill in the blank with the correct word. Babar Ali taught the deprived kids __________ of life.</strong></p>\r\n	</li>\r\n</ol>\r\n', '', '', '', '', '', ' Fundamentals '),
+(64, 18, '<ol>\r\n	<li>\r\n	<p>Pick the correct word from the list and fill in the blank.</p>\r\n	</li>\r\n</ol>\r\n\r\n<p>Everyone turned in the direction of __________(wice,vice,woise,voice)&nbsp;</p>\r\n', 'fill', '', '', '', '', 'VOICE'),
+(65, 18, '<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Identify the word that rhymes with &lsquo;Morn&rsquo;&nbsp;</p>\r\n', 'mcq', 'Horn', 'Crown ', 'frown  ', 'Mourn       ', 'horn'),
+(66, 18, '<p>isten to identify the silent letter and write</p>\r\n\r\n<p>World</p>\r\n', 'landwt', '', '', '', '', 'L');
 
 -- --------------------------------------------------------
 
@@ -219,7 +228,7 @@ INSERT INTO `studenttbl` (`studid`, `fname`, `lname`, `gender`, `blood`, `email`
 (37, 'dogoy', 'mahamout', 'Male', 'A', 'student@student.com', '8482838002', '8482838002', 'student', 'student', '1994-01-02', 'dd', 'dept1', 'cat1', '914332.jpg', 1),
 (38, 'kan', 'nockdam', 'Female', 'AB+', 'kan@gmail.com', '9090909090', '9090909090', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '28.jpg', 1),
 (39, 'asi', 'baka', 'Male', 'AB+', 'asi@gmail.com', '9091909090', '9091909090', '12345', '12345', '1997-05-29', 'sg palya', 'dept1', 'cat1', '15.jpg', 1),
-(41, 'suresh', 'reddy', 'Male', 'o-', 'suresh@gmail.com', '9992909090', '9992909090', '12345', '12345', '1997-05-29', 'tavarekere', 'dept1', 'cat1', '65.jpg', 1),
+(41, 'suresh', 'reddy', 'Male', 'A', 'suresh@gmail.com', '9992909090', '9992909090', '12345', '12345', '1997-05-29', 'tavarekere', 'dept7', 'cat7', '65.jpg', 1),
 (43, 'swapnil', 'swapnil', 'Male', 'B', 'swapnil@gmail.com', '9993909090', '9993909090', '12345', '12345', '1998-05-29', 'tavarekere', 'dept1', 'cat1', '60.jpg', 1),
 (44, 'nanda', 'gopal', 'Male', 'B', 'nanda@gmail.com', '9090909091', '9090909091', '12345', '12345', '1997-05-29', 'sg palya', 'dept1', 'cat1', '39.jpg', 1),
 (45, 'harsha', 'harsha', 'Female', 'AB+', 'harsha@gmail.com', '9090909096', '9090909096', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '23.jpg', 1),
@@ -247,7 +256,9 @@ CREATE TABLE `subjecttbl` (
 
 INSERT INTO `subjecttbl` (`sid`, `subname`, `deptname`, `catname`, `status`) VALUES
 (9, 'sub1', 'dept1', 'cat1', 1),
-(10, 'sub2', 'dept2', 'cat2', 0);
+(10, 'sub2', 'dept2', 'cat2', 0),
+(11, 'sub7', 'dept7', 'cat7', 1),
+(12, 'sub8', 'dept8', 'cat8', 1);
 
 -- --------------------------------------------------------
 
@@ -279,7 +290,7 @@ CREATE TABLE `usertbl` (
 --
 
 INSERT INTO `usertbl` (`uid`, `fname`, `lname`, `gender`, `blood`, `email`, `phone`, `mobile`, `password`, `cpassword`, `dob`, `address`, `deptname`, `catname`, `file`, `status`) VALUES
-(22, 'mahamat', 'abdallah', 'Male', 'o-', 'mahamatabdallah98@gmail.com', '9901147437', '9901147437', '12345', '12345', '1998-05-29', 'tavarekere', '----', '----', '450745.jpg', 1);
+(22, 'mahamat', 'abdallah', 'Male', 'o-', 'mahamatabdallah98@gmail.com', '9901147437', '9901147437', '12345', '12345', '1998-05-29', 'tavarekere', '----', '----', '34.jpg', 1);
 
 --
 -- Indexes for dumped tables
@@ -353,19 +364,19 @@ ALTER TABLE `assesmenttbl`
 -- AUTO_INCREMENT for table `categorytbl`
 --
 ALTER TABLE `categorytbl`
-  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `departmenttbl`
 --
 ALTER TABLE `departmenttbl`
-  MODIFY `deptid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `deptid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `examtbl`
 --
 ALTER TABLE `examtbl`
-  MODIFY `examid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `examid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `noticetbl`
@@ -377,7 +388,7 @@ ALTER TABLE `noticetbl`
 -- AUTO_INCREMENT for table `questiontbl`
 --
 ALTER TABLE `questiontbl`
-  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `studenttbl`
@@ -389,7 +400,7 @@ ALTER TABLE `studenttbl`
 -- AUTO_INCREMENT for table `subjecttbl`
 --
 ALTER TABLE `subjecttbl`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `usertbl`

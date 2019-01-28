@@ -49,12 +49,123 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							             <li id="menu-academico" ><a href="please.php"><i class="fa fa-book" aria-hidden="true" style="color:#008DE7;"></i><span> Training</span> <div class="clearfix"></div></a></li>
 										   
 										   
-								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a></li>
+								         <li id="menu-academico" ><a href="#"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a>
+								         <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="examination.php">Spelling Skills</a>
+
+                                             
+
+                                         </li>
+
+
+
+											<li id="menu-academico-avaliacoes" ><a href="#">Vocabulary Enhancement</a>
+
+
+                                                     
+
+
+											</li>
+
+
+
+
+										  </ul>
+										  </li>
 
 
 								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-star" aria-hidden="true" style="color:#ffff00"></i><span> Ranking</span> <div class="clearfix"></div></a></li>
 										   
 										 <li id="menu-academico" ><a href="result.php"><i class="fa fa-asterisk" style="color:#8e44ad;" ></i><span> Exam Results</span> <div class="clearfix"></div></a></li>
+
+<!-- 
+                                               
+								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a>
+								        <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="addsubject.php">Spelling Skills</a>
+
+                                                <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="addstudent.php">LEVEL I</a>
+
+
+                                                      <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="addstudent.php">Phoneme</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">Pronunciation of Words</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">LEVEL III</a>Finding words</li>
+											 </ul>
+
+
+                                                 
+                                                     
+											</li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php"> LEVEL II</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">LEVEL III</a></li>
+											 </ul>
+
+                                         </li>
+
+
+                                         
+											<li id="menu-academico-avaliacoes" ><a href="subjectlist.php">Vocabulary Enhancement</a>
+
+                                               
+                                                <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="addstudent.php">LEVEL I</a>
+
+                                                      
+                                                <ul id="menu-academico-sub" >
+										   
+											<li id="menu-academico-avaliacoes" ><a href="addstudent.php">Phoneme</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">Pronunciation of Words</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">LEVEL III</a>Finding words</li>
+											 </ul>
+
+
+											</li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php"> LEVEL II</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="studentlist.php">LEVEL III</a></li>
+											 </ul>
+                                                     
+
+
+											</li>
+
+
+
+
+										  </ul> 
+										  </li>
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 								
 								  </ul>
 								</div>

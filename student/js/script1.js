@@ -18,6 +18,7 @@ onload = function() {
                 flag = true;
                 utterance = new SpeechSynthesisUtterance(document.querySelector('article').textContent);
                 utterance.voice = getVoices()[0];
+              
 				utterance.onstart = function(){
                     flag = true; playEle.className ='played'; pauseEle.className = ''; stopEle.className = '';
                 };
