@@ -68,7 +68,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 session_start();
 include("connect.php");
 if(!empty($_POST["login"])) {
-	$result = mysql_query("SELECT * FROM studenttbl WHERE email='" . $_POST["email"] . "' and password = '".($_POST["password"])."'");
+	
+	$result = mysql_query("SELECT * FROM studenttbl WHERE email='" . $_POST["email"] . "' and password = '".($_POST["password"])."' ");
 	$row  = mysql_fetch_array($result);
 	if(is_array($row)) {
 	$_SESSION["studentid"] = $row['studid'];
@@ -76,7 +77,22 @@ if(!empty($_POST["login"])) {
 	$_SESSION["fname"] = $row['fname'];
 	$_SESSION["lname"] = $row['lname'];
 	$_SESSION["file"] = $row['file'];
+	$_SESSION["status"] = $row['status'];
+	$status = $row['status'];
+	if($status==0)
+	{
+		print '
+                                <div class="alert alert-danger" role="alert">
+                                        inactive account 
+                                    </div>';		
+	}
+	else
+	{
+
+
 	 header("Location:index.php");
+	 }
+
 	}
     
 }

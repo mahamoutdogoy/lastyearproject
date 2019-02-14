@@ -131,7 +131,7 @@ if (($result) === TRUE) {
                                             <div class="tab-content">
 											<?php 
 											include("connect.php");
-											$sql = "SELECT * FROM questiontbl WHERE examid = '$exam_id'";
+											$sql = "SELECT * FROM questiontbl  WHERE examid = '$exam_id' order by rand()";
                                             $result =mysql_query($sql);
 
                                             if (mysql_num_rows($result) > 0) {

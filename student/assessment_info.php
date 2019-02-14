@@ -66,7 +66,7 @@ header("location:./");
 						   <div class="col-md-6 agileits-w3layouts">
                            <div class="panel panel-white">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><b>Results Information</b></h4>
+                                  <center><h4 class="panel-title"><b>Results Information</b></h4></center>  
                                 </div>
                                 <div class="panel-body">
                                     <div class="table-responsive project-stats">  
@@ -75,26 +75,26 @@ header("location:./");
                                            </thead>
                                            <tbody>
                                                <tr>
-                                                   <th scope="row">1</th>
-                                                   <td>Exam Name</td>
-                                                   <td><?php echo $exam_name; ?></td>
+                                                   <th scope="row" style="color: white;">1</th>
+                                                  <td style="color: white;"> <b>Exam Name </b></td>
+                                                   <td style="color: white;"> <b><?php echo $exam_name; ?></b></td>
                                                </tr>
 											     <tr>
-                                                   <th scope="row">2</th>
-                                                   <td>Student_name</td>
-                                                   <td><?php echo $my_fname." ".$my_lname; ?></td>
+                                                   <th scope="row" style="color: white;">2</th>
+                                                   <td ><b>Student_name </b></td>
+                                                   <td> <b><?php echo $my_fname." ".$my_lname; ?> </b></td>
                                                </tr>
 											    <tr>
-                                                   <th scope="row">3</th>
-                                                   <td>Score</td>
-                                                   <td><?php echo $score; ?>%</td>
+                                                   <th scope="row" style="color: white;">3</th>
+                                                   <td style="color: white;"><b>Score </b></td>
+                                                   <td> <b><?php echo $score; ?>% </b></td>
                                                </tr>
 
 											   
 											  <tr>
-                                                   <th scope="row">4</th>
-                                                   <td>Next Re-take</td>
-                                                   <td><?php echo $next_retake;?></td>
+                                                   <th scope="row" style="color: white;">4</th>
+                                                   <td><b>Next Re-take </b></td>
+                                                   <td> <b><?php echo $next_retake;?> </b></td>
                                                </tr>
 
                                               
@@ -107,9 +107,9 @@ header("location:./");
 						 </div>
 						 <div class="col-md-6 agileits-w3layouts">
                            <div class="col-md-12">
-                            <div class="panel panel-white">
+                            <div class="panel panel-white" style="height: 290px;">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title"><b>Status</b></h3>
+                                   <center> <h3 class="panel-title"><b>Status</b></h3></center>
                                 </div>
                                 <div class="panel-body">
                                 <?php

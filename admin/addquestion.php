@@ -65,14 +65,14 @@ include("header.php"); ?>
 
              <label class="control-label">Select Question Type</label>
             <select name="menu" id="colorselector"> 
-			  <option value="" >--Select--</option>
-              <option value="mcq" >multiple choice questions </option>
-              <option value="wtword" >write the word </option>
-			  <option value="match" >match the following word </option>
-			  <option value="landwt" >listen and write </option>
-			  <option value="landlout" > listen and list out  </option>
-			  <option value="find" > finding the words</option>
-			  <option value="fill" >filling the blank space  </option>
+              			  <option value="" >--Select--</option>
+                      <option value="mcq" >multiple choice questions </option>
+                      <option value="wtword" >write the word </option>
+              			  <option value="match" >match the following word </option>
+              			  <option value="landwt" >listen and write </option>
+              			  <option value="landlout" > listen and list out  </option>
+              			  <option value="find" > finding the words</option>
+              			  <option value="fill" >filling the blank space  </option>
             </select>
 		    </div>
 			 <div class="clearfix"> </div>

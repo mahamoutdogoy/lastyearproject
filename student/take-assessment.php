@@ -139,49 +139,49 @@ mysql_close($con);
                               <tbody>
                                                <tr>
                                                    <th scope="row">1</th>
-                                                   <td>Exam Name</td>
-                                                   <td><?php echo $exam_name; ?></td>
+                                                   <td><h5>Exam Name</h5></td>
+                                                   <td><h5><?php echo $exam_name; ?></h5></td>
                                                </tr>
 											     <tr>
                                                    <th scope="row">2</th>
-                                                   <td>Subject</td>
-                                                   <td><?php echo $subject; ?></td>
+                                                   <td><h5>Subject</h5></td>
+                                                   <td><h5><?php echo $subject; ?></h5></td>
                                                </tr>
 											   <tr>
                                                    <th scope="row">3</th>
-                                                   <td>Deadline</td>
-                                                   <td><?php echo $deadline; ?></td>
+                                                   <td><h5>Deadline</h5></td>
+                                                   <td><h5><?php echo $deadline; ?></h5></td>
                                                </tr>
 											   
 											    <tr>
                                                    <th scope="row">4</th>
-                                                   <td>Duration</td>
-                                                   <td><?php echo $duration; ?> <b>min.</b></td>
+                                                   <td><h5>Duration</h5></td>
+                                                   <td><h5><?php echo $duration; ?> <b>min.</b></h5></td>
                                                </tr>
 											   
 											  <tr>
                                                    <th scope="row">5</th>
-                                                   <td>Next Re-take</td>
-                                                   <td><?php 
+                                                   <td><h5>Next Re-take</h5></td>
+                                                   <td><h5><?php 
 												   if ($record_found == 1) {
 													 echo $retake_date;  
 												   }else{
 													 echo $next_retake;  
 												   }
 												   
-												   ?></td>
+												   ?></h5></td>
                                                </tr>
 											   
 											   <tr>
                                                    <th scope="row">6</th>
-                                                   <td>Passmark</td>
-                                                   <td><?php echo $passmark; ?>%</td>
+                                                   <td><h5>Passmark</h5></td>
+                                                   <td><h5><?php echo $passmark; ?>%</h5></td>
                                                </tr>
 											   
 											   	<tr>
-                                                   <th scope="row">6</th>
-                                                   <td>Questions</td>
-                                                   <td><b><?php echo $quest; ?></b></td>
+                                                   <th scope="row">7</th>
+                                                   <td><h5>Questions</h5></td>
+                                                   <td><h5><b><?php echo $quest; ?></b></h5></td>
                                                </tr>
                                               
                                            </tbody>

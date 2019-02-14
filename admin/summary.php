@@ -106,24 +106,25 @@ mysql_close($con);
 						</thead>
 						<tbody>
 							<tr>
-								<td>Exam Name</td>
-								<td><span class=" "><?php echo "$exname"; ?></span></td>
+
+								<span><b><td>Exam Name</td></b></span>
+								<td><span class=" "><b><?php echo "$exname"; ?></b></span></td>
 							</tr>
 							<tr>
-								<td>Subject</td>
-								<td><span class=""><?php echo "$exsubject"; ?> </span></td>
+								<b><td>Subject</td></b>
+								<td><span class=""><b><?php echo "$exsubject"; ?> </b></span></td>
 							</tr>
 							<tr>
-								<td>Deadline</td>
-								<td><span class=""><?php echo "$exdate"; ?></span></td>
+								<b><td>Deadline</td></b>
+								<td><span class=""><b><?php echo "$exdate"; ?></b></span></td>
 							</tr>
 							<tr>
-								<td>Duration</td>
-								<td><span class=""><?php echo "$exduration"; ?> <b>min.</b></span></td>
+								<b><td>Duration</td></b>
+								<td><span class=""><b><?php echo "$exduration"; ?></b> <b>min.</b></span></td>
 							</tr>
 							<tr>
-								<td>Passmark</td>
-								<td><span><?php echo "$expassmark"; ?><b>%</b></span></td>
+								<b><td>Passmark</td></b>
+								<td><span><b><?php echo "$expassmark"; ?><b>%</b></span></td>
 							</tr>
 							
 								
@@ -142,8 +143,8 @@ mysql_close($con);
 						</thead>
 						<tbody>
 							<tr>
-								<td><center><?php echo "$stdpass"; ?></center></td>
-								<td><center><?php echo "$stdfail"; ?></center></td>
+								<td><center><h4><?php echo "$stdpass"; ?></h4></center></td>
+								<td><center><h4><?php echo "$stdfail"; ?></h4></center></td>
 							</tr>
 						</tbody>
 				</table>   

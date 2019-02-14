@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										  </li>
 
 
-								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-star" aria-hidden="true" style="color:#ffff00"></i><span> Ranking</span> <div class="clearfix"></div></a></li>
+								         <li id="menu-academico" ><a href="result.php"><i class="fa fa-star" aria-hidden="true" style="color:#ffff00"></i><span> Ranking</span> <div class="clearfix"></div></a></li>
 										   
 										 <li id="menu-academico" ><a href="result.php"><i class="fa fa-asterisk" style="color:#8e44ad;" ></i><span> Exam Results</span> <div class="clearfix"></div></a></li>
 
