@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 25, 2019 at 03:54 PM
+-- Generation Time: Feb 14, 2019 at 07:04 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -47,7 +47,11 @@ CREATE TABLE `assesmenttbl` (
 INSERT INTO `assesmenttbl` (`recordid`, `studid`, `studname`, `examname`, `examid`, `score`, `status`, `nextretake`, `date`) VALUES
 (63, 36, 'yasha dayma', 'exam1', 17, '0', 'FAIL', '01/05/2019', '12/31/2018'),
 (64, 38, 'kan nockdam', 'exam1', 17, '33', 'PASS', '01/05/2019', '12/31/2018'),
-(68, 39, 'asi baka', 'exam1', 17, '0', 'FAIL', '12/31/2018', '12/31/2018');
+(68, 39, 'asi baka', 'exam1', 17, '0', 'FAIL', '12/31/2018', '12/31/2018'),
+(74, 48, 'idriss tahir', 'exam1', 17, '0', 'FAIL', '02/07/2019', '02/07/2019'),
+(77, 47, 'johanna eveangeline', 'Vocabualry', 19, '0', 'FAIL', '02/09/2019', '02/08/2019'),
+(79, 46, 'ronald benjamin', 'exam1', 17, '0', 'FAIL', '02/09/2019', '02/09/2019'),
+(81, 41, 'suresh reddy', 'Spelling Skills', 18, '0', 'FAIL', '02/13/2019', '02/12/2019');
 
 -- --------------------------------------------------------
 
@@ -191,8 +195,14 @@ INSERT INTO `questiontbl` (`qid`, `examid`, `questionname`, `questiontype`, `op1
 (62, 17, '<p>The word &lsquo;based&rsquo; ends in /d/ or /t/ sound.</p>\r\n', '', '', '', '', '', 't'),
 (63, 17, '<ol>\r\n	<li>\r\n	<p><strong>Fill in the blank with the correct word. Babar Ali taught the deprived kids __________ of life.</strong></p>\r\n	</li>\r\n</ol>\r\n', '', '', '', '', '', ' Fundamentals '),
 (64, 18, '<ol>\r\n	<li>\r\n	<p>Pick the correct word from the list and fill in the blank.</p>\r\n	</li>\r\n</ol>\r\n\r\n<p>Everyone turned in the direction of __________(wice,vice,woise,voice)&nbsp;</p>\r\n', 'fill', '', '', '', '', 'VOICE'),
-(65, 18, '<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Identify the word that rhymes with &lsquo;Morn&rsquo;&nbsp;</p>\r\n', 'mcq', 'Horn', 'Crown ', 'frown  ', 'Mourn       ', 'horn'),
-(66, 18, '<p>isten to identify the silent letter and write</p>\r\n\r\n<p>World</p>\r\n', 'landwt', '', '', '', '', 'L');
+(65, 18, '<p>Â  Â  Â  Â  Â  Â Identify the word that rhymes with â€˜Mornâ€™Â </p>\r\n', 'mcq', 'Horn', 'Crown ', 'frown  ', 'Mourn       ', 'Horn'),
+(66, 18, '<p>isten to identify the silent letter and write</p>\r\n\r\n<p>World</p>\r\n', 'landwt', '', '', '', '', 'L'),
+(67, 19, '<p>Fill in the blanks using the noun form of the verbs given in brackets.</p>\r\n\r\n<p>a. The faces of the animals were capable of no other _____________ (express) except a perpetual smile after the verdict.</p>\r\n', 'fill', '', '', '', '', 'EXPRESSION'),
+(68, 19, '<p>The old woman stopped singing when there was a slight __________ (disturb).</p>\r\n', 'fill', '', '', '', '', 'DISTURBANCE '),
+(69, 19, '<p>Students learnt the correct ________ (pronounce) of the words.</p>\r\n', 'fill', '', '', '', '', 'PRONUNCIATION'),
+(70, 19, '<p>The lion was too hasty in his _______ (judge).</p>\r\n', 'fill', '', '', '', '', 'JUDGEMENT'),
+(71, 19, '<p>Mara stood in ________ (amaze) looking at the lake.</p>\r\n', 'fill', '', '', '', '', 'AMAZEMENT   '),
+(72, 18, '<p>who is nish&nbsp;------------</p>\r\n', 'fill', '', '', '', '', 'STUDENT');
 
 -- --------------------------------------------------------
 
@@ -233,8 +243,8 @@ INSERT INTO `studenttbl` (`studid`, `fname`, `lname`, `gender`, `blood`, `email`
 (44, 'nanda', 'gopal', 'Male', 'B', 'nanda@gmail.com', '9090909091', '9090909091', '12345', '12345', '1997-05-29', 'sg palya', 'dept1', 'cat1', '39.jpg', 1),
 (45, 'harsha', 'harsha', 'Female', 'AB+', 'harsha@gmail.com', '9090909096', '9090909096', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '23.jpg', 1),
 (46, 'ronald', 'benjamin', 'Male', 'B', 'ronald@mail.com', '8945238911', '8945238911', '12345', '12345', '1997-05-29', 'tavarekere', 'dept1', 'cat1', '49.jpg', 1),
-(47, 'johanna', 'eveangeline', 'Female', 'AB+', 'johanna@gmail.com', '9812346789', '9812346789', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '27.jpg', 1),
-(48, 'idriss', 'tahir', 'Male', 'A', 'idriss@gmail.com', '9090898978', '78967564656', '12345', '12345', '0002-02-11', 'tavarekere', 'dept1', 'cat1', '410097.png', 1);
+(47, 'johanna', 'eveangeline', 'Female', 'AB+', 'johanna@gmail.com', '9812346789', '9812346789', '12345', '12345', '1998-05-29', 'sg palya', 'dept8', 'cat8', '27.jpg', 1),
+(48, 'idriss', 'tahir', 'Male', 'A', 'idriss@gmail.com', '9090898978', '78967564656', '12345', '12345', '0002-02-11', 'tavarekere', 'dept1', 'cat1', '410097.png', 0);
 
 -- --------------------------------------------------------
 
@@ -358,7 +368,7 @@ ALTER TABLE `usertbl`
 -- AUTO_INCREMENT for table `assesmenttbl`
 --
 ALTER TABLE `assesmenttbl`
-  MODIFY `recordid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `recordid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `categorytbl`
@@ -388,7 +398,7 @@ ALTER TABLE `noticetbl`
 -- AUTO_INCREMENT for table `questiontbl`
 --
 ALTER TABLE `questiontbl`
-  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `studenttbl`
