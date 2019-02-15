@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 14, 2019 at 07:04 AM
+-- Generation Time: Feb 15, 2019 at 08:09 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -51,7 +51,8 @@ INSERT INTO `assesmenttbl` (`recordid`, `studid`, `studname`, `examname`, `exami
 (74, 48, 'idriss tahir', 'exam1', 17, '0', 'FAIL', '02/07/2019', '02/07/2019'),
 (77, 47, 'johanna eveangeline', 'Vocabualry', 19, '0', 'FAIL', '02/09/2019', '02/08/2019'),
 (79, 46, 'ronald benjamin', 'exam1', 17, '0', 'FAIL', '02/09/2019', '02/09/2019'),
-(81, 41, 'suresh reddy', 'Spelling Skills', 18, '0', 'FAIL', '02/13/2019', '02/12/2019');
+(82, 41, 'suresh reddy', '', 0, '0', 'FAIL', '', ''),
+(102, 41, 'suresh reddy', 'Spelling Skills', 18, '0', 'FAIL', '02/16/2019', '02/15/2019');
 
 -- --------------------------------------------------------
 
@@ -138,15 +139,18 @@ CREATE TABLE `noticetbl` (
   `noteid` int(11) NOT NULL,
   `notice` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `description` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `postdate` varchar(50) NOT NULL
+  `postdate` varchar(50) NOT NULL,
+  `lastupdate` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `noticetbl`
 --
 
-INSERT INTO `noticetbl` (`noteid`, `notice`, `description`, `postdate`) VALUES
-(8, 'Assessments', 'every student is required to take his/her assessment on time, fail to do that the instructor wont re-enable the assessment again.', '14/03/2018 05:24:15');
+INSERT INTO `noticetbl` (`noteid`, `notice`, `description`, `postdate`, `lastupdate`) VALUES
+(9, 'exam', 'test', '15/02/2019 10:02:43', '15/02/2019 10:02:43'),
+(10, 'exam2', 'hello', '15/02/2019 10:08:03', '15/02/2019 10:08:03'),
+(11, 'exam3', 'test', '15/02/2019 10:10:59', '15/02/2019 10:10:59');
 
 -- --------------------------------------------------------
 
@@ -234,8 +238,6 @@ CREATE TABLE `studenttbl` (
 --
 
 INSERT INTO `studenttbl` (`studid`, `fname`, `lname`, `gender`, `blood`, `email`, `phone`, `mobile`, `password`, `cpassword`, `dob`, `address`, `deptname`, `catname`, `file`, `status`) VALUES
-(36, 'yasha', 'dayma', 'Female', 'A', 'yasha@gmail.com', '234323', '66666666', 'yasha', 'yasha', '2018-12-13', 'nashik', 'dept1', 'cat1', '573998.jpg', 1),
-(37, 'dogoy', 'mahamout', 'Male', 'A', 'student@student.com', '8482838002', '8482838002', 'student', 'student', '1994-01-02', 'dd', 'dept1', 'cat1', '914332.jpg', 1),
 (38, 'kan', 'nockdam', 'Female', 'AB+', 'kan@gmail.com', '9090909090', '9090909090', '12345', '12345', '1998-05-29', 'sg palya', 'dept1', 'cat1', '28.jpg', 1),
 (39, 'asi', 'baka', 'Male', 'AB+', 'asi@gmail.com', '9091909090', '9091909090', '12345', '12345', '1997-05-29', 'sg palya', 'dept1', 'cat1', '15.jpg', 1),
 (41, 'suresh', 'reddy', 'Male', 'A', 'suresh@gmail.com', '9992909090', '9992909090', '12345', '12345', '1997-05-29', 'tavarekere', 'dept7', 'cat7', '65.jpg', 1),
@@ -300,7 +302,7 @@ CREATE TABLE `usertbl` (
 --
 
 INSERT INTO `usertbl` (`uid`, `fname`, `lname`, `gender`, `blood`, `email`, `phone`, `mobile`, `password`, `cpassword`, `dob`, `address`, `deptname`, `catname`, `file`, `status`) VALUES
-(22, 'mahamat', 'abdallah', 'Male', 'o-', 'mahamatabdallah98@gmail.com', '9901147437', '9901147437', '12345', '12345', '1998-05-29', 'tavarekere', '----', '----', '34.jpg', 1);
+(22, 'mahamat', 'abdallah', 'Male', 'o-', 'mahamatabdallah98@gmail.com', '9901147437', '9901147437', '12345', '12345', '1998-05-29', 'tavarekere', '----', '----', '76354.jpg', 1);
 
 --
 -- Indexes for dumped tables
@@ -368,7 +370,7 @@ ALTER TABLE `usertbl`
 -- AUTO_INCREMENT for table `assesmenttbl`
 --
 ALTER TABLE `assesmenttbl`
-  MODIFY `recordid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
+  MODIFY `recordid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
 -- AUTO_INCREMENT for table `categorytbl`
@@ -392,7 +394,7 @@ ALTER TABLE `examtbl`
 -- AUTO_INCREMENT for table `noticetbl`
 --
 ALTER TABLE `noticetbl`
-  MODIFY `noteid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `noteid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `questiontbl`
