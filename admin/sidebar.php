@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="index.php"><i class="fa fa-tachometer" style="color:#ffbf00"></i> <span>Dashboard</span><div class="clearfix"></div></a></li>
 										
 										
-										 <li id="menu-academico" ><a href="userlist.php"><i class="fa fa-user" style="color:#22beef;"></i><span>AdminList</span><div class="clearfix"></div></a></li>
+										 <li id="menu-academico" ><a href="userlist.php"><i class="fa fa-user" style="color:#22beef;"></i><span>AdminInfo</span><div class="clearfix"></div></a></li>
 									
 									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"  style="color:#ff4a43;"></i><span> Question Type</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 										   <ul id="menu-academico-sub" >

@@ -110,14 +110,14 @@ include("connect.php");
               <input type="password" placeholder="password" name="pass" id="pass"required="">
             </div>
 			<div class="col-md-6 form-group1 form-last">
-              <label class="control-label">Repeated password</label>
+              <label class="control-label">Repeat password</label>
               <input type="password" placeholder="Repeated password" name="cpass" id="cpass" required="">
             </div>
 			<div class="clearfix"> </div>
             </div>
             <div class="col-md-6 form-group">
               <button type="submit" class="btn btn-primary" name="save">Update</button>
-              <button type="reset" class="btn btn-default"  name="reset">Reset</button>
+              <button type="reset" class="btn btn-warning"  name="reset">Reset</button>
             </div>
 			
             
@@ -135,7 +135,7 @@ include("connect.php");
 			
             <div class="col-md-6 form-group">
               <button type="submit" class="btn btn-primary" name="save">Update</button>
-              <button type="reset" class="btn btn-default"  name="reset">Reset</button>
+              <button type="reset" class="btn btn-warning"  name="reset">Reset</button>
             </div>
 			</form>
             

@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<div class="profile_img">	
 												<span class="prfil-img"><?php echo($my_file!=NULL)?'<img src="uploaded/'.$my_file.'" >' :'' ;?> </span> 
 												<div class="user-name">
-													<p><?php echo $my_fname;?></p>
+													<p><?php echo "Hi ,   $my_fname";?></p>
 													<span>Student</span>
 												</div>
 												<i class="fa fa-angle-down"></i>

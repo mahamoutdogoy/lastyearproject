@@ -149,15 +149,15 @@ if (($result) === TRUE) {
 												$ans = $row['correctop'];
 												$enan =$row['correctop'];
                                           $i=0;
-										  if($type=='landwt')
+										  if($type=='landwt') 
 										  {
-											  $qs1 = "  Listen and Write <br>";
+											  $qs1 = "  Listen and Write <br> ";
 											  
 											  $b='
 													<a id="play" class="btn bg-success">Listen</a> 
 													<a id="pause"></a> 
 													<a id="stop"></a>';
-												  $qs ='<article><b style="color:white;">'.$qs.'</b></article>';
+												  $qs ='<article hidden><b style="color:white;">'.$qs.'</b></article>';
 												
 										    }
 										   else
@@ -201,7 +201,7 @@ if (($result) === TRUE) {
 											print '
 											<div role="tabpanel" class="tab-pane fade in" id="tab'.$qno.'">
                                              <p><b>'.$qno.'.</b> '.$qs.'</p>
-											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op1.'"> '.$op1.'</p>
+											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op1.'"> '.$op1.' </p>
 											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op2.'"> '.$op2.'</p>
 											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op3.'"> '.$op3.'</p>
 											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op4.'"> '.$op4.'</p>
