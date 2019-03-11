@@ -51,7 +51,20 @@ header("location:./");
  		
  		<div class="validation-form">
  	-->
-  	    
+  	    <script type="text/javascript">
+  	    	
+  	    	function printPageArea(areaID){
+  	    	    var printContent = document.getElementById(areaID);
+  	    	    var WinPrint = window.open('', '', 'width=900,height=1650');
+  	    	    WinPrint.document.write(printContent.innerHTML);
+  	    	    WinPrint.document.close();
+  	    	    WinPrint.focus();
+  	    	    WinPrint.print();
+  	    	    WinPrint.close();
+  	    	}
+  	    </script>
+  	        
+<button href="" onclick="printPageArea('printme')">Print Result</button>
 <?php
 
 include("connect.php");
@@ -61,11 +74,13 @@ $result = mysql_query($sql);
 {
 	extract($rows);
 	?>
-    
 
+
+<div id="printme">
 <div class="agile-grids">
 <div class="agile-tables">
 <div class="w3l-table-info">
+
 <h3><?php echo $exam_name; ?> Results</h3>
 <table width="100%" id="table">
 <thead>
@@ -91,6 +106,7 @@ $result = mysql_query($sql);
 	<td><?php echo $rows['date'];?></td>
 	<td><?php echo $rows['nextretake'];?></td>
 	<td>
+	</div>
     <ul  style="list-style: none;" >
           <li class="dropdown ">
 		  

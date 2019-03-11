@@ -104,7 +104,7 @@ if(($status)=='1')
 		  </button>
 		      <ul class="dropdown-menu drp-mnu">
 		          <li> <a href="viewquestion.php?eid=<?php echo $rows['examid']; ?>"> View Question</a> </li> 
-				  <li> <a href="addq.php?eid=<?php echo $rows['examid']; ?>"> Add Question</a> </li>
+				  <li> <a href="addquestion.php?eid=<?php echo $rows['examid']; ?>"> Add Question</a> </li>
 			      
 			  </ul>
 	      </li>

@@ -9,7 +9,7 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 <link rel="stylesheet" href="css/style5.css">
-<link rel="shortcut icon" href="http://bit.ly/ghfavicon" width=32px>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
 	
 	
@@ -117,14 +117,15 @@ if (($result) === TRUE) {
   
   <div id='tiles' class="color-full"></div>
   <div class="countdown-label">Time Remaining</div>
+
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	</div>
 
- 	<div class="validation-system">
+ 	<div class="validation-system col-md-7">
  		
- 		<div class="validation-form">
+ 		<div class="validation-form ">
   	    
          
                  <form action="submit_assessment.php" method="POST" name="quiz" id="quiz_form" >
@@ -151,13 +152,14 @@ if (($result) === TRUE) {
                                           $i=0;
 										  if($type=='landwt') 
 										  {
-											  $qs1 = "  Listen and Write <br> ";
+										  	
+											  $qs1 = " <center>Listen and Write <br></center> ";
 											  
 											  $b='
-													<a id="play" class="btn bg-success">Listen</a> 
+													<center><a id="play" class="btn bg-success">Listen</a> </center>
 													<a id="pause"></a> 
 													<a id="stop"></a>';
-												  $qs ='<article hidden><b style="color:white;">'.$qs.'</b></article>';
+												  $qs =' <center><article hidden><b style="color:white;">'.$qs.'</b></article></center>';
 												
 										    }
 										   else
@@ -170,7 +172,7 @@ if (($result) === TRUE) {
 											
 											if ($qno == 1) {
                                              if($type !='fill' && $type !='wtword'&& $type !='landwt') {
-											print '
+											print '	
 											<div role="tabpanel" class="tab-pane active fade in" id="tab'.$qno.'">
                                              <p><b>'.$qno.'.</b> '.$qs.'</p>
 											 <p><input type="radio" name="an'.$qno.'"  class="form-control" value="'.$op1.'"> '.$op1.'</p>
@@ -274,17 +276,54 @@ if (($result) === TRUE) {
 
                                         </div>
 								<br><input onclick="return confirm('Are you sure you want to submit your assessment ?')" class="btn bg-success" type="submit" value="Submit Assessment">
-						</form>  
-     
 
+						</form>  
+ 
 				
 				
 			
             
 
 </div>
+
 </div>
-<?php include("footer.php"); ?>
+   <!-- <center><h2>QUESTIONS PALETTES</h2></center>  -->
+   <?php //echo $total_questions;
+
+    ?>
+			<div class="col-lg-5 float-right well">
+			<dir class="circle"></dir>
+			<span class="dot bg-danger">1</span>
+			<span class="dot">2</span>
+			<span class="dot bg-success">3</span>
+			<span class="dot">4</span>
+			<span class="dot bg-warning">5</span>
+
+			<br>
+			<span class="dot bg-warning">6</span>
+			<span class="dot">7</span>
+			<span class="dot">8</span>
+			<span class="dot bg-success">9</span>
+			<span class="dot">10</span>
+			<br><br><br><br><br>
+
+			<span class="div1 bg-danger square"></span>
+
+			<span class="div2 bg-success square"></span>
+
+			<span class="div3 bg-warning square"></span>
+
+			<span class="div4 bg-light square"></span>
+
+			<span class="all text-danger">Not Answered</span>
+			<span class="all1 text-success">Answered</span>
+			<span class="all2 text-danger">Visited</span>
+			<span class="all3 text-light">Not Visited</span>
+
+
+
+</div>
+<?php //include("footer.php"); ?>
 </div></div>
 
 	<?php include("sidebar.php"); 
@@ -303,3 +342,84 @@ else
  <script  src="js/index.js"></script>
 </body>
 </html>
+<style type="text/css">
+	
+	.dot {
+  height: 55px;
+  width: 55px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+.square
+{
+	height: 55px;
+  width: 55px;
+  background-color: #bbb;
+  
+  display: inline-block;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.div1 {
+  width: 90px;
+  height:30px;
+  border: 1px solid white;
+  color: white;
+  background-color:red;
+  text-align:center;
+ 
+}
+
+.div2 {
+  width: 90px;
+  height:30px;
+  border: 1px solid white;
+  color: white;
+  background-color:red;
+  text-align:center;
+ 
+  
+}
+.div3 {
+  width: 90px;
+  height:30px;
+  border: 1px solid white;
+  color: white;
+  background-color:red;
+  text-align:center;
+ 
+  
+}
+.div4 {
+  width: 90px;
+  height:30px;
+  border: 1px solid white;
+  color: white;
+  
+  text-align:center;
+ 
+  
+}
+.all
+{
+  margin-left: 20px;
+}
+.all1
+{
+  margin-left: 60px;
+}
+.all2
+{
+  margin-left: 90px;
+}
+.all3
+{
+  margin-left: 60px;
+}
+</style>

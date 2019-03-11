@@ -78,7 +78,7 @@ include("header.php"); ?>
 			 <div class="clearfix"> </div>
 			 
 			 
-			 
+			<!--  
 			 <div id="find" class="colors find"> 
   
               
@@ -109,7 +109,7 @@ include("header.php"); ?>
                <input type="text" class="form-control"  name="correct_op_find" "required">
           </div>
 		  <div class="clearfix"> </div>
-          </div> 
+          </div>  -->
 			 
              <div id="mcq" class="colors mcq"> 
   
@@ -182,10 +182,10 @@ include("header.php"); ?>
 		  <div id="find" class="colors find">  
 		  
 		 
-		  <!--div class="col-md-12 form-group2 group-mail">
+		  <div class="col-md-12 form-group2 group-mail">
                <label class="control-label">Correct Word</label>
-               <input type="text" class="form-control"  name="correct_op" "required">
-          </div-->
+               <input type="text" class="form-control"  name="correct_op" onkeyup="this.value = this.value.toUpperCase();" "required">
+          </div>
 		  <div class="clearfix"> </div>
 		  
 		  </div>

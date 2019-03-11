@@ -82,9 +82,9 @@ if(!empty($_POST["login"])) {
 	if($status==0)
 	{
 		print '
-                                <div class="alert alert-danger" role="alert">
-                                        inactive account 
-                                    </div>';		
+                              <center>  <div class="alert alert-danger" role="alert">
+                                      <h1>  inactive account contact the admin </h1>
+                                    </div>  </center>' ;		
 	}
 	else
 	{
