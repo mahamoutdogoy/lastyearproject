@@ -156,8 +156,8 @@ include("fetch_records.php")
 								<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>BANNED STUDENTS</h3>
-								<h1><?php echo number_format($banned_students); ?></h1>
+								<h3>PASSED</h3>
+								<h1><?php echo number_format($std_pass); ?></h1>
 								
 							</div>
 							
@@ -179,8 +179,8 @@ include("fetch_records.php")
 								<!-- <i class="glyphicon glyphicon-user" aria-hidden="true"></i>  -->
 							</div>
 							<div class="four-text">
-								<h3>LEVEL SELECTOR</h3>
-								<h4><?php echo number_format($questions); ?></h4>
+								<h3>FAILED</h3>
+								<h4><?php echo number_format($std_fails); ?></h4>
 
 							</div>
 							

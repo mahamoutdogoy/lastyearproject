@@ -49,10 +49,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							             <li id="menu-academico" ><a href="please.php"><i class="fa fa-book" aria-hidden="true" style="color:#008DE7;"></i><span> Training</span> <div class="clearfix"></div></a></li>
 										   
 										   
-								         <li id="menu-academico" ><a href="#"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a>
+								         <li id="menu-academico" ><a href="examination.php"><i class="fa fa-th-list" style="color:#ff9501;" ></i><span> Examination</span> <div class="clearfix"></div></a>
 								         <ul id="menu-academico-sub" >
 										   
-											<li id="menu-academico-avaliacoes" ><a href="examination.php">Spelling Skills</a>
+										<!-- 	<li id="menu-academico-avaliacoes" ><a href="examination.php">Spelling Skills</a> -->
 
                                              
 
@@ -60,8 +60,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-											<li id="menu-academico-avaliacoes" ><a href="#">Vocabulary Enhancement</a>
-
+											<!-- <li id="menu-academico-avaliacoes" ><a href="#">Vocabulary Enhancement</a>
+ -->
 
                                                      
 
@@ -78,6 +78,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								         <li id="menu-academico" ><a href="result.php"><i class="fa fa-star" aria-hidden="true" style="color:#ffff00"></i><span> Ranking</span> <div class="clearfix"></div></a></li>
 										   
 										 <li id="menu-academico" ><a href="result.php"><i class="fa fa-asterisk" style="color:#8e44ad;" ></i><span> Exam Results</span> <div class="clearfix"></div></a></li>
+
+
+										 <li id="menu-academico" ><a href="studentanalysis.php"><i class="fa fa-asterisk" style="color:#8e44ad;" ></i><span>progress</span> <div class="clearfix"></div></a></li>
+
 
 <!-- 
                                                

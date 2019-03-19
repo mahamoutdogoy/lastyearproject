@@ -33,8 +33,8 @@ include("header.php"); ?>
   	    
         <form action="adddepartment.php" method="post">
 		    <div class="col-md-6 form-group1">
-              <label class="control-label">QUESTION TYPE</label>
-              <input type="text" placeholder="TYPE" name="deptnm" required="">
+              <label class="control-label">Department Name</label>
+              <input type="text" placeholder="Name" name="deptnm" required="">
             </div>
               <div class="col-md-12 form-group2 group-mail">
               <!--<label class="control-label">Select Department </label>

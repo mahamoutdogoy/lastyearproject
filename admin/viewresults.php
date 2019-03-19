@@ -7,8 +7,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
 
 </head> 
+
+<style type="text/css">
+	
+
+	.me
+	{
+		color:white;
+		background: #008DE7;
+		border-radius: 10px;
+		font-family: 'Markazi Text', serif;
+		font-size: 20px;
+	}
+</style>
 <body>
 <div class="page-container">
    <!--/content-inner-->
@@ -64,7 +78,7 @@ header("location:./");
   	    	}
   	    </script>
   	        
-<button href="" onclick="printPageArea('printme')">Print Result</button>
+<button class="me" href="" onclick="printPageArea('printme')" >Print Results</button>
 <?php
 
 include("connect.php");

@@ -321,7 +321,34 @@ if (($result) === TRUE) {
 			<span class="all3 text-light">Not Visited</span>
 
 
+<ul class="nav nav-tabs" role="tablist" class="circle">
+			<?php 
+		  include("connect.php");
+		 $sql = "SELECT * FROM questiontbl WHERE examid = '$exam_id'";
+	         $result = mysql_query($sql);
 
+
+	         if (mysql_num_rows($result) > 0) {
+	           $qno = 1;
+		      $total_questions = 0;
+	          while($row = mysql_fetch_assoc($result)) {
+			  $total_questions++;
+		 	if ($qno == 1) {
+			print '<li role="presentation" class="dot"><a href="#tab'.$qno.'" role="tab" data-toggle="tab">'.$qno.'</a></li>';	
+
+
+
+			}else{
+			print '<li role="presentation" class="dot"><a href="#tab'.$qno.'" role="tab" data-toggle="tab">'.$qno.'</a></li>';		
+			}
+
+			$qno = $qno + 1;
+	         }
+												
+	          } else {
+	 
+	               }
+	            ?>	
 </div>
 <?php //include("footer.php"); ?>
 </div></div>

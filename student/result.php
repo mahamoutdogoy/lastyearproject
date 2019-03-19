@@ -35,7 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 include("connect.php");
 
-$rank = "SELECT score FROM assesmenttbl ORDER BY score DESC";
+$rank = "SELECT score FROM assesmenttbl  where studid = '$my_id' ";
 $re1 = mysql_query($rank);
 $sql="SELECT * FROM assesmenttbl WHERE studid = '$my_id'";
 $result = mysql_query($sql);

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+	<title></title>
 </head>
 
 <style>
-  
+	
 body
 {
-   padding-top: 40px;
+	 padding-top: 40px;
 }
-  form {
+	form {
     color:#fff;
 
   } 
@@ -203,7 +203,7 @@ body
   }
 #fx-respond
 {
-  padding-top: 90px;
+	padding-top: 90px;
 }
 
 
@@ -342,10 +342,12 @@ input[type="text"] {
         <div class="fx-col">
           <!-- ADD BLOCK(S) HERE -->
           <!-- START: SHARE BLOCK -->
+  
+  
           <div class="fx-block fx-purple fx-share fx-align-left fx-cf purple-bg" style="padding:20px ">
             <div class="fx-copy" style="padding-left:20px; padding-bottom:0">
-               <h2>LEVEL 1</h2>
-              <h2>Spelling Skills</h2>
+              
+
               <p> </p>
               <p><a href="#game" id="start-button" class="fx-btn">Start now</a></p>
             </div>
@@ -411,18 +413,6 @@ input[type="text"] {
 
 
 
-                                             <div class="question">
-    
-
-       <p><span class="number">5 </span><span class="questionText">Write the word that rhymes with ‘Worth’  </span></p>
-       <div class="answers">
-  <!-- <input type="text" id="answer1" class="text" data-correct="web browser" placeholder="enter answer here"></input>  -->
-
-  <label><input type="text" class="answer" data-correct="Earth111 or Birth11" placeholder="enter answer here" required> <span class="text"></span></label>
-  
-  <!-- <button onclick="Question1(), checkMyScore()" class="checkbtn">✔</button> -->
-</div>
-                    </div>
                
 
 </div>
@@ -465,9 +455,9 @@ input[type="text"] {
 </html>
 
 <script >
-  
+	
 
-  var game = {
+	var game = {
   // state and jquery selectors
   state: {
     startButton: $("#start-button"),
@@ -719,7 +709,7 @@ var correct=0;
 
     if (question1=="Markup"){
         correct++;
-  }
+  }4 out of 4
 
    if (question2=="true") {
        correct++;

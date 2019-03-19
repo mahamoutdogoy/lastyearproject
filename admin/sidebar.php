@@ -29,8 +29,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//content-inner-->
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
-					<header class="logo1">
-						<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> 
+
+					<header class="logo1" style="background-color:#FF00FF; height: 60px;">
+						<a href="#" class="sidebar-icon"> <span class="fa fa-bars" hidden=""></span> </a> 
 					</header>
 						<div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
                            <div class="menu">
@@ -40,11 +41,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										
 										 <li id="menu-academico" ><a href="userlist.php"><i class="fa fa-user" style="color:#22beef;"></i><span>AdminInfo</span><div class="clearfix"></div></a></li>
 									
-									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"  style="color:#ff4a43;"></i><span> Question Type</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
+									 <li id="menu-academico" ><a href="#"><i class="fa fa-list-ul" aria-hidden="true"  style="color:#ff4a43;"></i><span> Department</span> <span class="fa fa-angle-right" style="float: right"></span><div class="clearfix"></div></a>
 										   <ul id="menu-academico-sub" >
 										   
-											<li id="menu-academico-avaliacoes" ><a href="adddepartment.php">Add Question Type</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="departmentlist.php">Question TYpe List</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="adddepartment.php">Add Department</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="departmentlist.php">List Of Departments</a></li>
 
 										  </ul>
 										</li>
@@ -93,6 +94,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										  </ul>
 									</li>
 							         <li><a href="results.php"><i class="fa fa-asterisk" style="color:#ff0000"></i>  <span>Exam Results</span><div class="clearfix"></div></a></li>
+
+							          <li><a href="analysis.php"><i class="fa fa-asterisk" style="color:#ff0000"></i>  <span>Analysis</span><div class="clearfix"></div></a></li>
 									
 								  </ul>
 								</div>
