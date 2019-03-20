@@ -79,6 +79,13 @@ if(!empty($_POST["login"])) {
 	$_SESSION["file"] = $row['file'];
 	 header("Location:index.php");
 	}
+	else
+	{
+		print '
+                              <center>  <div class="alert alert-danger" role="alert">
+                                      <h1> wrong email or password </h1>
+                                    </div>  </center>' ;		
+	}
     
 }
 ?>

@@ -307,6 +307,12 @@ if (($result) === TRUE) {
 			<span class="dot">8</span>
 			<span class="dot bg-success">9</span>
 			<span class="dot">10</span>
+			<br>
+			<span class="dot bg-warning">11</span>
+			<span class="dot">12</span>
+			<span class="dot">13</span>
+			<span class="dot bg-success">14</span>
+			<span class="dot">15</span>
 			<br><br><br><br><br>
 
 			<span class="div1 bg-danger square"></span>
@@ -322,7 +328,7 @@ if (($result) === TRUE) {
 			<span class="all2 text-danger">Visited</span>
 			<span class="all3 text-light">Not Visited</span>
 
-
+<!-- 
 <ul class="nav nav-tabs" role="tablist" class="circle">
 			<?php 
 		  include("connect.php");
@@ -350,7 +356,7 @@ if (($result) === TRUE) {
 	          } else {
 	 
 	               }
-	            ?>	
+	            ?>	 -->
 </div>
 <?php //include("footer.php"); ?>
 </div></div>

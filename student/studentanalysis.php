@@ -59,7 +59,7 @@ $current = mysql_query("SELECT  score  from assesmenttbl WHERE studid = '$my_id'
     <strong>Success!</strong> good to see you improving
   </div><br>';
 
-  echo '<center><div class="p-3 mb-2 bg-success text-white">good to see you improving</div></center>';
+  echo '<center><div class="p-3 mb-2 bg-success text-white"><h4>GOOD TO SEE YOU IMPROVING </h4></div></center>';
 
   	
   }
@@ -76,7 +76,7 @@ $current = mysql_query("SELECT  score  from assesmenttbl WHERE studid = '$my_id'
   else if ( $b == $a)
   {
   
-    echo ' <center><div class="alert alert-primary"> you have got the same marks in both test </div></center>';
+    echo ' <center><div class="alert alert-primary"><h4> you have got the same marks in both test </h4> </div></center>';
 
   }
   else

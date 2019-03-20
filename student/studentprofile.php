@@ -112,11 +112,11 @@ include("connect.php");
 		    <form method="post" action="new_pwd.php" enctype="multipart/form-data">
          	<div class="vali-form vali-form1">
             <div class="col-md-6 form-group1">
-              <label class="control-label">Enter Password</label>
+              <label class="control-label">New Password</label>
               <input type="password" placeholder="password" name="pass" required="">
             </div>
 			<div class="col-md-6 form-group1 form-last">
-              <label class="control-label">Repeated password</label>
+              <label class="control-label">Confirm password</label>
               <input type="password" placeholder="Repeated password" name="cpass" required="">
             </div>
 			<div class="clearfix"> </div>
