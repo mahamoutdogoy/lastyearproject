@@ -123,12 +123,14 @@ if (($result) === TRUE) {
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	</div>
 
- 	<div class="validation-system col-md-7">
+ 	<div class="validation-system col-md-7 shadow-lg">
+
  		
- 		<div class="validation-form ">
+ 		<div class="validation-form shadow-lg">
+
   	    
          
-                 <form action="submit_assessment.php" method="POST" name="quiz" id="quiz_form" >
+                 <form action="submit_assessment.php" method="POST" name="quiz" id="quiz_form" class="shadow-lg" >
                                             <div class="tab-content">
 											<?php 
 											include("connect.php");
@@ -449,4 +451,6 @@ else
 {
   margin-left: 60px;
 }
+
+
 </style>
